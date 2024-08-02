@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Titulo da Página</title>
+{% endblock %}
+{% block content %}
+{% include "partials/_alertas.html"%}
+<a href="{% url 'criar_item' %}" class="btn btn-primary">Criar itens</a>
+  {% include 'partials/_cards.html' %}
+    <!--Footer Início-->  
+  {% include 'partials/_footer.html' %}
+  <!--Footer Fim-->  
+{% endblock %}
